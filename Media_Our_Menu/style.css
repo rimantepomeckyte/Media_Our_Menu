@@ -1,0 +1,124 @@
+body, html {
+    height: 100%;
+    padding: 10px;
+}
+* {
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+#visas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.pirmas {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.chicken {
+    background-color: pink;
+    grid-area: 1/2/2/3;
+}
+
+.aprasas1 {
+    background-color: gray;
+    grid-area: 2/1/3/3;
+    padding: 6px;
+}
+
+.antras {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.beef {
+    background-color: red;
+    grid-area: 1/2/2/3;
+}
+
+.aprasas2 {
+    background-color: gray;
+    grid-area: 2/1/3/3;
+    padding: 6px;
+}
+
+.trecias {
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sushi {
+    background-color: yellow;
+    grid-area: 1/2/2/3;
+}
+
+.aprasas3 {
+    background-color: gray;
+    grid-area: 2/1/3/3;
+    padding: 6px;
+}
+
+.tuscias {
+    background-color: gray;
+}
+.border {
+    border: 3px solid black;
+}
+.bendrash4 {
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 321px) and (max-width: 1203px){
+    #visas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        }
+    .pirmas {
+        width: 49%;
+        flex:1;
+    }
+    .antras{
+        width: 49%;
+        flex: 1;
+    }
+    .trecias{
+        width: 100%;
+    }
+}
+@media (max-width: 320px) {
+    #visas{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+/*#visas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr 1fr;
+    }
+    .pirmas {
+        grid-area: 1/1/2/2;
+    }
+    .antras{
+        grid-area: 1/2/2/3;
+    }
+    .trecias{
+        grid-area: 2/1/3/3;
+    }*/
